@@ -318,7 +318,7 @@
   padding: 8px 15px;
   margin-bottom: 20px;
   list-style: none;
-  background-color: #f5f5f5;
+  background-color: transparent;
   border-radius: 4px;
 }
 .breadcrumb > li {
@@ -330,7 +330,7 @@
   color: #cccccc;
 }
 .breadcrumb > .active {
-  color: #777777;
+  color: #7a8288;
 }
 .pagination {
   display: inline-block;
@@ -345,12 +345,12 @@
 .pagination > li > span {
   position: relative;
   float: left;
-  padding: 6px 12px;
+  padding: 8px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #007aff;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
+  color: #ffffff;
+  background-color: #3a3f44;
+  border: 1px solid rgba(0, 0, 0, 0.6);
   margin-left: -1px;
 }
 .pagination > li:first-child > a,
@@ -369,9 +369,9 @@
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   z-index: 3;
-  color: #0055b3;
-  background-color: #eeeeee;
-  border-color: #dddddd;
+  color: #ffffff;
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.6);
 }
 .pagination > .active > a,
 .pagination > .active > span,
@@ -381,8 +381,8 @@
 .pagination > .active > span:focus {
   z-index: 2;
   color: #ffffff;
-  background-color: #007aff;
-  border-color: #007aff;
+  background-color: #232628;
+  border-color: rgba(0, 0, 0, 0.6);
   cursor: default;
 }
 .pagination > .disabled > span,
@@ -391,14 +391,14 @@
 .pagination > .disabled > a,
 .pagination > .disabled > a:hover,
 .pagination > .disabled > a:focus {
-  color: #777777;
+  color: #7a8288;
   background-color: #ffffff;
-  border-color: #dddddd;
+  border-color: rgba(0, 0, 0, 0.6);
   cursor: not-allowed;
 }
 .pagination-lg > li > a,
 .pagination-lg > li > span {
-  padding: 10px 16px;
+  padding: 14px 16px;
   font-size: 18px;
   line-height: 1.3333333;
 }
@@ -433,7 +433,7 @@
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eeeeee;
+  background-color: #1c1e22;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -445,7 +445,7 @@
   font-weight: 200;
 }
 .jumbotron > hr {
-  border-top-color: #d5d5d5;
+  border-top-color: #050506;
 }
 .container .jumbotron,
 .container-fluid .jumbotron {

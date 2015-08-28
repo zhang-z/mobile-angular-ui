@@ -128,7 +128,8 @@ gulp.task('css:less', function () {
       'src/less/mobile-angular-ui-base.less',
       'src/less/mobile-angular-ui-desktop.less',
       'src/less/mobile-angular-ui-migrate.less',
-      'src/less/sm-grid.less'
+      'src/less/sm-grid.less',
+      'src/less/custom-variables.less'
     ])
     .pipe(less({paths: GLOBS.vendorLess}))
     .pipe(mobilizer('mobile-angular-ui-base.css', {
@@ -141,6 +142,7 @@ gulp.task('css:less', function () {
 gulp.task('css:concat', function() {
   return gulp.src([
     path.join(CSS_TEMP_DIR, 'sm-grid.css'),
+    path.join(CSS_TEMP_DIR, 'custom-variables.css'),
     path.join(CSS_TEMP_DIR, 'mobile-angular-ui-base.css')
   ])
   .pipe(concat('mobile-angular-ui-base.css'))
